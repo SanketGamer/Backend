@@ -72,7 +72,7 @@ app.delete("/",function(req,res){
 function isthereanykidneys(){
   let atleastonekidneys=false
   for(let i=0;i<user[0].kidney.length;i++){
-    if(user[0].kidney[i].healthy){
+    if(!user[0].kidney[i].healthy){
       atleastonekidneys=true;
     }
   }
